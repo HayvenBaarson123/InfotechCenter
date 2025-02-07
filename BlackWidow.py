@@ -1,12 +1,16 @@
 # Import necessary libraries
 import sys  # sys is used to access system-specific parameters and functions
 import time  # time is used to handle time-related tasks such as pauses (sleep)
+from colorama import Fore, Back, Style, init  # colorama is used for colored text in terminal
+
+# Initialize colorama
+init(autoreset=True)
 
 # Display a welcome message with the developer's name
-print("\nWelcome Branch - Developer: Hayven Baarson")
+print(Fore.CYAN + "\nWelcome Branch - Developer: Hayven Baarson")
 
 # Display the version of the software being run
-print("\nWelcome to InfoTechCenter v1.0\n")
+print(Fore.GREEN + "\nWelcome to InfoTechCenter v1.0\n")
 
 # Initialize variables
 x = 0  # Counter for the number of iterations
@@ -15,7 +19,7 @@ ellipsis = 0  # Variable to control the number of dots in the loading message
 # Loop that will run 20 times
 while x != 20:
     x += 1  # Increment counter x by 1 on each iteration
-    message = ("InfoTech Center System Booting" + "." * ellipsis)  # Prepare the message with increasing dots
+    message = (Fore.YELLOW + "InfoTech Center System Booting" + "." * ellipsis)  # Prepare the message with increasing dots
     ellipsis += 1  # Increase the number of dots to create a "loading" effect
     sys.stdout.write("\r" + message)  # Output the message on the same line, overwriting the previous one
     time.sleep(0.5)  # Wait for 0.5 seconds before the next iteration
@@ -26,4 +30,5 @@ while x != 20:
 
     # When the loop has run 20 times, print the final message
     if x == 20:
-        print("\nOperating System Booted Up - Retina Scanned - Access Granted\n")
+        print(Fore.GREEN + "\nOperating System Booted Up - Retina Scanned - Access Granted\n")
+
