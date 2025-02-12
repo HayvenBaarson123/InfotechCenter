@@ -1,9 +1,4 @@
 
-# Programmer: Hayven Baarson
-# Branch: BetaTestDev
-# Date:
-# Program:
-
 import sys  # sys is used to access system-specific parameters and functions
 import time  # time is used to handle time-related tasks such as pauses (sleep)
 import random
@@ -43,7 +38,7 @@ while x != 20:
 
     # When the loop has run 20 times, print the final message
     if x == 20:
-        print(f"{GREEN}\nOperating System Booted Up - Retina Scanned - Access Granted\n{RESET}")
+        print(f"{GREEN}\n\nOperating System Booted Up - Retina Scanned - Access Granted\n{RESET}")
 
 # Weather conditions with alarm time and speed
 weather_responses = {
