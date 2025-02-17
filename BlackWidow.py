@@ -19,15 +19,15 @@ def gasLevelAlert():
     gasLevelIndicator = gasLevelGauge()
     if gasLevelIndicator == "Empty":
         print("****WARNING - YOU ARE OUT OF GAS****\n")
-        sleep(1.25)
+        sleep(3.25)
         print("Calling AAA")
     elif gasLevelIndicator == "Low":
         print("your gas tank is extremly low, checking GPS for the closest gas station")
-        sleep(1.25)
+        sleep(3.25)
         print("The closest gas station is", gasStation(), "which is", milesToGasStationLow, "miles away")
     elif gasLevelIndicator == "Quarter Tank":
         print("Your tank is on a Quarter Tank, checking GPS for the closest gas station")
-        sleep(1.25)
+        sleep(3.25)
         print("The closest gas station is", gasStation(), "which is", milesToGasStationQuarterTank, "miles away")
     elif gasLevelIndicator == "Half Tank":
         print("Your at half a tank, witch is plenty to get to your destination.")
