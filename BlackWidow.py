@@ -1,5 +1,5 @@
 print("\n******************************************************\n")
-print("Gasoline Branch - Developer: Hayven Baarson")
+print("Gasoline Branch - Developer: Hayven Baarson\n")
 
 import random
 from time import sleep
@@ -22,17 +22,17 @@ def gasLevelAlert():
         sleep(3.25)
         print("Calling AAA")
     elif gasLevelIndicator == "Low":
-        print("your gas tank is extremly low, checking GPS for the closest gas station")
+        print("your gas tank is extremly low, checking GPS for the closest gas station.\n")
         sleep(3.25)
-        print("The closest gas station is", gasStation(), "which is", milesToGasStationLow, "miles away")
+        print("The closest gas station is", gasStation(), "which is", milesToGasStationLow, "miles away.\n")
     elif gasLevelIndicator == "Quarter Tank":
-        print("Your tank is on a Quarter Tank, checking GPS for the closest gas station")
+        print("Your tank is on a Quarter Tank, checking GPS for the closest gas station\n")
         sleep(3.25)
-        print("The closest gas station is", gasStation(), "which is", milesToGasStationQuarterTank, "miles away")
+        print("The closest gas station is", gasStation(), "which is", milesToGasStationQuarterTank, "miles away.\n")
     elif gasLevelIndicator == "Half Tank":
-        print("Your at half a tank, witch is plenty to get to your destination.")
+        print("Your at half a tank, witch is plenty to get to your destination.\n")
     elif gasLevelIndicator == "Three Quarter Tank":
-        print("Your at Three Quarter tank, witch is plenty to get to your destination.")
+        print("Your at Three Quarter tank, witch is plenty to get to your destination.\n")
     else:
         print("Your gas tank is FULL!")
 gasLevelAlert()
